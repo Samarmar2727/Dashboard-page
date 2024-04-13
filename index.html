@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500&family=Work+Sans:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--start Dashboard-->
+    <h2 class="main-title"> Dashboard page</h2>
+    <div class="dashboard">
+        <div class="sidebar">
+            <h3> El samarmora</h3>
+            <ul>
+                <li>
+                    <a class="dash" href="#Dashboard">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#settings">
+                      <i class="fa-solid fa-gear"></i>
+                       <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile">
+                        <i class="fa-regular fa-user"></i>
+                       <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#courses">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+            <li>
+            <a href="#friends">
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Friends</span>
+            </a>
+        </li>
+       <li>
+       <a href="#plans">
+          <i class="fa-regular fa-credit-card fa-fw"></i>
+           <span>Plans</span>
+        </a>
+        </li>
+        </ul>
+        </div>
+        <!--end sidebar-->
+        <!--start header-->
+        <div class="content">
+          <div class="header">
+             <div class="search">
+                <a href="#" class="fas fa-search"></a>
+                <input type="search" placeholder="Type A Keyword">
+                </div>
+                <div class="icons">
+                    <span class="notifications">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="img/avatar 7.jpg" alt=""> 
+                  </div>
+             </div>
+          <!--end header-->
+
+          <h1>Dashboard</h1>
+          <div class="wrapper">
+            <!--start welcome-->  
+            <div class="welcome">
+                <div class="intro">
+                    <div>
+                     <h2>Welcome</h2>
+                        <p>Elsamarmora</p>
+                    </div>
+                    <img src="img/welcome 2.png" alt="">
+                </div>
+                <img class="avatar"src="img/avatar 7.jpg" alt="">
+              <div class="body">
+                <div>Samar khaled<span>developer</span></div>
+                <div>Projects<span>80</span></div>
+                <div>Earned<span>$10000</span></div>
+              </div>
+              <a class="visit" href="#profile">profile</a>
+            </div>
+            <!--end welcome-->
+            <!--start draft-->
+            <div class="draft">
+                    <h2>Quick Draft</h2>
+                    <p>Write A Draft For Your Ideas</p>
+                <div class="form">
+                    <input type="text" placeholder="Title">
+                    <textarea  placeholder="Your Thought"></textarea>
+                    <input class="save" type="submit" value="save">
+                </div>
+            </div>
+            <!--end draft-->
+            <!--start targets-->
+            <div class="Targets">
+                <h2>Yearly Targets</h2>
+                <p>Targets Of The Year</p>
+                <div class="target" id="target1">
+                    <div class="icon">
+                        <i class="fa-regular fa-dollar-sign fa-lg"></i>
+                    </div>
+                    <div class="details">
+                        <span class="samar">money</span>
+                        <span>$20.0000</span>
+                        <div class="progress">
+                            <span class="purple" style="width:80%;">
+                                <span>80%</span>
+                              </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="target" id="target2">
+                    <div class="icon">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                    </div>
+                    <div class="details">
+                        <span class="samar">projects</span>
+                        <span>24</span>
+                        <div class="progress">
+                            <span class="green" style="width:40%;">
+                                <span>40%</span>
+                              </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="target" id="target3">
+                    <div class="icon">
+                        <i class="fa-solid fa-code fa-lg"></i>
+                    </div>
+                    <div class="details">
+                        <span class="samar">team</span>
+                        <span>12</span>
+                        <div class="progress">
+                            <span class="blue" style="width:60%;">
+                                <span>60%</span>
+                              </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tickets">
+                <h2>Tickets Statistics</h2>
+                <p>Everything About Support Tickets</p>
+                <div class="ticket">
+                    <div class="box" id="box1">
+                        <i class="fa-solid fa-list fa-2x"></i>
+                        <span>2500</span>
+                        Total
+                    </div>
+                    <div class="box" id="box2">
+                            <i class="fa-solid fa-spinner fa-2x"></i>
+                            <span>500</span>
+                             pending
+                    </div>
+                    <div class="box" id="box3">
+                            <i class="fa-regular fa-circle-check fa-2x"></i>
+                            <span>1900</span>
+                            closed
+                    </div>
+                    <div class="box" id="box4">
+                            <i class="fa-regular fa-rectangle-xmark fa-2x"></i>
+                            <span>100</span>
+                              deleated
+                    </div>
+                </div>
+            </div>
+            <!--end tickets-->
+              <!--start news-->
+              <div class="news">
+                <h2>Lasted News</h2>
+                <div class="new">
+                    <img src="img/graph3.jpg" alt="">
+                    <div class="info">
+                        <h3>Created SASS Section</h3>
+                        <p>New SASS Examples&Tutorials </p>
+                    </div>
+                    <div class="label">3 Days Ago</div>
+                </div>
+                <div class="new">
+                    <img src="img/graph2.jpg" alt="">
+                    <div class="info">
+                        <h3>Change The Design</h3>
+                        <p>A Brand New Website Design </p>
+                    </div>
+                    <div class="label">5 Days Ago</div>
+                </div>
+                <div class="new">
+                    <img src="img/graph1.webp" alt="">
+                    <div class="info">
+                        <h3>Team Increased</h3>
+                        <p>3 developers Joined the Team </p>
+                    </div>
+                    <div class="label">7 Days Ago</div>
+                </div>
+                <div class="new">
+                    <img src="img/graph4.jpg" alt="">
+                    <div class="info">
+                        <h3>Added Payment Geteway</h3>
+                        <p>Many New Payment Gateways Added </p>
+                    </div>
+                    <div class="label">9 Days Ago</div>
+                </div>
+                
+              </div>
+                <!--end news-->
+                <!--start task-->
+                <div class="tasks">
+                    <h2>Latest Tasks</h2>
+                    <div class="task">
+                        <div class="info">
+                            <h3>Record One New Video</h3>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="info">
+                            <h3>Write Article</h3>
+                            <p>Write Low Level vs High Level Languages</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="info">
+                            <h3>Finish Project</h3>
+                            <p>Publish Academy Programming Project</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="info" id="info3">
+                            <h3>Attend The Meeting</h3>
+                            <p>Attend The Project Business Analysis Meeting</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="info" >
+                            <h3>Finish Lesson</h3>
+                            <p>Finish Teaching Flex Box</p>
+                        </div>
+                        <i class=" fa-regular fa-trash-can delete"></i>
+                    </div>
+                </div>
+                 <!--end task-->
+                   <!--start search items-->
+                 <div class="items">
+                    <h2>Top Search Items</h2>
+                    <div class="item" id="items1">
+                        <div class="info">
+                            <h3>Keyword</h3>
+                        </div>
+                        <span>Search Count</span>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>Programming</h3>
+                        </div>
+                        <span>220</span>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>Java Script</h3>
+                        </div>
+                        <span>180</span>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>PHP</h3>
+                        </div>
+                        <span>160</span>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>Code</h3>
+                        </div>
+                        <span>145</span>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>Design</h3>
+                        </div>
+                        <span>110</span>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>Logic</h3>
+                        </div>
+                        <span>95</span>
+                    </div>
+                 </div>
+                  <!--end search items-->
+                  <!--start upload -->
+                  <div class="uploads">
+                    <h2>Latest uploads</h2>
+                    <ul class="items">
+                        <li>
+                            <div class="imgs">
+                                <img src="img/pdf.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>my-file-pdf </span>
+                                <span>samar</span>
+                            </div>
+                            <div class="space">
+                                2.9mb
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgs">
+                                <img src="img/png.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>my-video-file-avl </span>
+                                <span>admin</span>
+                            </div>
+                            <div class="space">
+                                4.9mb
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgs">
+                                <img src="img/psd.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>my-psd-file-pdf </span>
+                                <span>khaled</span>
+                            </div>
+                            <div class="space">
+                                4.5mb
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgs">
+                                <img src="img/zip.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>my-zip- file-pdf </span>
+                                <span>User</span>
+                            </div>
+                            <div class="space">
+                                8.9mb
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgs">
+                                <img src="img/txt.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>my-Dll-file-pdf </span>
+                                <span>admin</span>
+                            </div>
+                            <div class="space">
+                                4.9mb
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgs">
+                                <img src="img/eps.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>my-Eps-file-pdf </span>
+                                <span>designer</span>
+                            </div>
+                            <div class="space">
+                                2.9mb
+                            </div>
+                        </li>
+
+                        
+        
+                    </ul>
+
+                  </div>
+                  <!--end upload-->
+
+
+                        
+            </div>
+            
+
+          </div>
+                   
+        
+        
+          </div>
+              
+            
+               
+  
+
+
+         </div>
+
+       
+    </div>
+    
+   
+    
+    
+
+
+
+</body>
+</html>
+
